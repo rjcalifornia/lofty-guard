@@ -1,0 +1,18 @@
+{
+    "name": "rjcalifornia/laravel-walled-garden",
+    "description": "Roles and permissions for user, with support for special permissions to the user",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Rjcalifornia\\LaravelWalledGarden\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rjcalifornia"
+        }
+    ],
+    "require": {
+        "spatie/laravel-package-tools": "^1.16"
+    }
+}
