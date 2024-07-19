@@ -1,10 +1,10 @@
 {
-    "name": "rjcalifornia/laravel-walled-garden",
+    "name": "rjcalifornia/lofty-guard",
     "description": "Roles and permissions for user, with support for special permissions to the user",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Rjcalifornia\\LaravelWalledGarden\\": "src/"
+            "Rjcalifornia\\LoftyGuard\\": "src/"
         }
     },
     "authors": [
@@ -14,5 +14,13 @@
     ],
     "require": {
         "spatie/laravel-package-tools": "^1.16"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rjcalifornia\\LoftyGuard\\LoftyGuardServiceProvider"
+            ]
+        }
     }
 }

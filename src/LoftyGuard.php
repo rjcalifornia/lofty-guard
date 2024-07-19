@@ -1,9 +1,9 @@
 <?php
 
-namespace Rjcalifornia\LaravelWalledGarden;
+namespace Rjcalifornia\LoftyGuard;
 use Illuminate\Support\Facades\Log;
 
-class LaravelWalledGarden{
+class LoftyGuard{
     public static function hasPermission($user, String $permissionName)
     {
         $allow = false;

@@ -1,12 +1,12 @@
 <?php
 
-namespace Rjcalifornia\LaravelWalledGarden;
+namespace Rjcalifornia\LoftyGuard;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 //use VendorName\Skeleton\Commands\SkeletonCommand;
 
-class LaravelWalledGardenServiceProvider extends PackageServiceProvider
+class LoftyGuardServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,12 +16,11 @@ class LaravelWalledGardenServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-walled-garden')
+            ->name('lofty-guard')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_migration_roles_table')
-            ->hasMigration('create_migration_permissions_table')
-            ->hasMigration('create_migration_special_permissions_table');
+           // ->hasViews()
+            ->hasMigrations(['create_roles_table', 'create_permissions_table', 'create_role_permission_table'])
+            ->runsMigrations();
            // ->hasCommand(SkeletonCommand::class);
     }
 }
