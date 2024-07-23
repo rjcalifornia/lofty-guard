@@ -19,7 +19,7 @@ class LoftyGuardServiceProvider extends PackageServiceProvider
             ->name('lofty-guard')
             ->hasConfigFile()
            // ->hasViews()
-            ->hasMigrations(['create_roles_table', 'create_permissions_table', 'create_role_permission_table'])
+            ->hasMigrations(['create_roles_table', 'create_permissions_table', 'create_role_permission_table', 'create_add_role_id_to_users_table'])
             ->runsMigrations();
            // ->hasCommand(SkeletonCommand::class);
     }
